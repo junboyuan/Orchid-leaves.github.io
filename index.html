@@ -1,0 +1,11 @@
+---
+layout: default
+title: 兰叶的空间
+---
+<h1>欢迎来到兰叶的空间</h1>
+<p>My post list:</p>
+<ul>
+    {% for post in site.posts %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
